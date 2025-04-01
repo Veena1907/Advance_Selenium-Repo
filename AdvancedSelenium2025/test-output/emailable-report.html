@@ -1,0 +1,62 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "https://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="https://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+<title>TestNG Report</title>
+<style type="text/css">table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}th,td {border:1px solid #009;padding:.25em .5em}th {vertical-align:bottom}td {vertical-align:top}table a {font-weight:bold}.stripe td {background-color: #E6EBF9}.num {text-align:right}.passedodd td {background-color: #3F3}.passedeven td {background-color: #0A0}.skippedodd td {background-color: #DDD}.skippedeven td {background-color: #CCC}.failedodd td,.attn {background-color: #F33}.failedeven td,.stripe .attn {background-color: #D00}.stacktrace {white-space:pre;font-family:monospace}.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}.invisible {display:none}</style>
+</head>
+<body>
+<table>
+<tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
+<tr><th colspan="8">Suite</th></tr>
+<tr><td><a href="#t0">Test</a></td><td class="num">4</td><td class="num">0</td><td class="num attn">3</td><td class="num attn">1</td><td class="num">79,792</td><td></td><td></td></tr>
+</table>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test &#8212; failed (configuration methods)</th></tr><tr class="failedeven"><td rowspan="1">ContactsTest.CreateContact</td><td><a href="#m0">afterMethod</a></td><td rowspan="1">1743515256233</td><td rowspan="1">1161</td></tr><tr><th colspan="4">Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">Login.LoginTest</td><td><a href="#m1">loginTest</a></td><td rowspan="1">1743515226881</td><td rowspan="1">2038</td></tr><tr><th colspan="4">Test &#8212; skipped (configuration methods)</th></tr><tr class="skippedeven"><td rowspan="1">ContactsTest.CreateContact</td><td><a href="#m2">afterClass</a></td><td rowspan="1">1743515257401</td><td rowspan="1">0</td></tr><tr><th colspan="4">Test &#8212; retried</th></tr><tr class="retriedeven"><td rowspan="3">Login.LoginTest</td><td><a href="#m3">loginTest</a></td><td rowspan="3">1743515216646</td><td rowspan="3">2110</td></tr><tr class="retriedeven"><td><a href="#m4">loginTest</a></td></tr><tr class="retriedeven"><td><a href="#m5">loginTest</a></td></tr><tr><th colspan="4">Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="2">CampaignTest.CreateCampaign</td><td><a href="#m6">createCampaignTest</a></td><td rowspan="1">1743515182565</td><td rowspan="1">6638</td></tr><tr class="passedeven"><td><a href="#m7">createCampaignWithDateTest</a></td><td rowspan="1">1743515190525</td><td rowspan="1">7965</td></tr><tr class="passedodd"><td rowspan="1">ContactsTest.CreateContact</td><td><a href="#m8">createContactTest</a></td><td rowspan="1">1743515239774</td><td rowspan="1">16456</td></tr><tr class="passedeven"><td rowspan="1">ProductTest.CreateProduct</td><td><a href="#m9">createProductTest</a></td><td rowspan="1">1743515202645</td><td rowspan="1">10421</td></tr></tbody>
+</table>
+<h2>Test</h2><h3 id="m0">ContactsTest.CreateContact#afterMethod</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; data-prefix=&quot;fas&quot; data-icon=&quot;user&quot; class=&quot;svg-inline--fa fa-user &quot; role=&quot;img&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot; viewBox=&quot;0 0 448 512&quot; style=&quot;font-size: 22px; padding: 0px;&quot;&gt;...&lt;/svg&gt; is not clickable at point (1270, 35). Other element would receive the click: &lt;div class=&quot;Toastify__toast Toastify__toast--success&quot; style=&quot;&quot;&gt;...&lt;/div&gt;
+  (Session info: chrome=134.0.6998.178)
+Build info: version: &apos;4.26.0&apos;, revision: &apos;8ccf0219d7&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.3&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [634f0d36e9c44b2d5eca03c1d6b721cd, clickElement {id=f.DD5ED0B051891DF86A8A04CB0D85F2D1.d.A95BE46CDDCB903957AFE6EB4DA2FC0F.e.31}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.178, chrome: {chromedriverVersion: 134.0.6998.165 (fd886e2cb29..., userDataDir: C:\Users\Guru\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53125}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53125/devtoo..., se:cdpVersion: 134.0.6998.178, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (634f0d36e9c44b2d5eca03c1d6b721cd)] -&gt; xpath: //*[name()=&apos;svg&apos; and @role=&apos;img&apos;]]
+Session ID: 634f0d36e9c44b2d5eca03c1d6b721cd
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy20.click(Unknown Source)
+	at ObjectRepository.DashboardPage.logout(DashboardPage.java:54)
+	at genericBaseClassUtility.BaseClass.afterMethod(BaseClass.java:82)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 35 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">Login.LoginTest#loginTest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: Validation is failed expected [http://49.249.28.218:8098/dashboar] but found [http://49.249.28.218:8098/dashboard]
+	at Login.LoginTest.loginTest(LoginTest.java:30)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 30 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">ContactsTest.CreateContact#afterClass</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">Login.LoginTest#loginTest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: Validation is failed expected [http://49.249.28.218:8098/dashboar] but found [http://49.249.28.218:8098/dashboard]
+	at Login.LoginTest.loginTest(LoginTest.java:30)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 30 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">Login.LoginTest#loginTest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: Validation is failed expected [http://49.249.28.218:8098/dashboar] but found [http://49.249.28.218:8098/dashboard]
+	at Login.LoginTest.loginTest(LoginTest.java:30)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 30 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">Login.LoginTest#loginTest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: Validation is failed expected [http://49.249.28.218:8098/dashboar] but found [http://49.249.28.218:8098/dashboard]
+	at Login.LoginTest.loginTest(LoginTest.java:30)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 30 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">CampaignTest.CreateCampaign#createCampaignTest</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">Campaign Apple_410 added sucessfully</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">CampaignTest.CreateCampaign#createCampaignWithDateTest</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">Campaign Apple_179 added sucessfully</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m8">ContactsTest.CreateContact#createContactTest</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">Contact veena_502 added Successfully</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m9">ProductTest.CreateProduct#createProductTest</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">Product Car_644 added successfully</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+</body>
+</html>
