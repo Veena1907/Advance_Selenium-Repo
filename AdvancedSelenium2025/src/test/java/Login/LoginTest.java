@@ -16,7 +16,7 @@ public class LoginTest extends BaseClass {
 	@Test(retryAnalyzer = genericListenerUtility.RetryListenerImp.class)
 	public void loginTest() throws InterruptedException, IOException {
 		
-		String expectedURL="http://49.249.28.218:8098/dashboar";
+		String expectedURL="http://49.249.28.218:8098/dashboard";
 		
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
