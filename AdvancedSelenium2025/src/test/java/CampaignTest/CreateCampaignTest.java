@@ -15,7 +15,7 @@ import genericBaseClassUtility.BaseClass;
 import genericListenerUtility.ListenerImp;
 
 //@Listeners(ListenerImp.class)
-public class CreateCampaign extends BaseClass {
+public class CreateCampaignTest extends BaseClass {
 	
 	//@Parameters("browser")
 	//@Test(groups= {"SmokeTest"})
