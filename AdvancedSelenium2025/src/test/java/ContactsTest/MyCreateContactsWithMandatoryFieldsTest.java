@@ -26,7 +26,7 @@ import GenericUtility.ExcelFileUtility;
 import GenericUtility.JavaUtility;
 import GenericUtility.PropertiesFileUtility;
 
-public class MyCreateContactsWithMandatoryFieldstest {
+public class MyCreateContactsWithMandatoryFieldsTest {
 
 	public static void main(String[] args) throws InterruptedException, IOException {
 		PropertiesFileUtility propUtil= new PropertiesFileUtility();
