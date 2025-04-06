@@ -8,6 +8,7 @@ public class ReadTest {
 	public void Readtest()
 	{
 		System.out.println("Read test executed succesfully");
+		System.out.println("done");
 	}
 
 }
