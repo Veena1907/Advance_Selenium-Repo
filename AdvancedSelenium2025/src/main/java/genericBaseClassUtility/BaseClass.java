@@ -43,7 +43,8 @@ public class BaseClass {
 	public void beforeClass() throws IOException
 	{
 		System.out.println("Launch the browser");
-		String BROWSER = pro.readingDataFromPropertiesFile("browser");
+		//String BROWSER = pro.readingDataFromPropertiesFile("browser"); //from properties file
+		String BROWSER = System.getProperty("browser"); //for maven command line
 		if(BROWSER.equalsIgnoreCase("chrome"))
 		{
 			driver=new ChromeDriver();
@@ -68,8 +69,10 @@ public class BaseClass {
 	{
 		System.out.println("Login");
 		String URL = pro.readingDataFromPropertiesFile("url");
-		String UN = pro.readingDataFromPropertiesFile("uname");
-		String PWD = pro.readingDataFromPropertiesFile("pwd");
+		//String UN = pro.readingDataFromPropertiesFile("uname"); //from propertiesfile
+		  String UN = System.getProperty("uname"); //reading from maven cmd line
+		  String PWD = System.getProperty("pwd"); //reading from maven cmd line
+		//String PWD = pro.readingDataFromPropertiesFile("pwd"); //from propertiesfile
 		driver.get(URL);
 		LoginPage lp= new LoginPage(driver);
 		lp.login(UN, PWD);
