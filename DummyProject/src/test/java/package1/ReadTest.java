@@ -7,7 +7,7 @@ public class ReadTest {
 	@Test	
 	public void Readtest()
 	{
-		System.out.println("Read test executed succesfully");
+		System.out.println("Reading test executed succesfully");
 	
 	}
 
