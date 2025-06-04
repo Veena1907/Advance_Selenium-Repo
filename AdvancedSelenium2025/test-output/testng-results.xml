@@ -1,157 +1,297 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
+<testng-results ignored="0" total="5" passed="4" failed="0" skipped="1">
   <reporter-output>
-    <line>
-      <![CDATA[Campaign Apple_741 added sucessfully]]>
-    </line>
-    <line>
-      <![CDATA[Campaign Apple_338 added sucessfully]]>
-    </line>
-    <line>
-      <![CDATA[Product Car_885 added successfully]]>
-    </line>
     <line>
       <![CDATA[Validation is passed]]>
     </line>
     <line>
-      <![CDATA[Contact veena_604 added Successfully]]>
+      <![CDATA[Campaign Apple_657 added sucessfully]]>
+    </line>
+    <line>
+      <![CDATA[Contact veena_283 added Successfully]]>
+    </line>
+    <line>
+      <![CDATA[Product Car_808 added successfully]]>
     </line>
   </reporter-output>
-  <suite started-at="2025-04-04T20:23:22 IST" name="Suite" finished-at="2025-04-04T20:25:06 IST" duration-ms="103773">
+  <suite started-at="2025-06-04T13:25:42 IST" name="Suite" finished-at="2025-06-04T13:26:24 IST" duration-ms="42395">
     <groups>
     </groups>
-    <test started-at="2025-04-04T20:23:22 IST" name="Test" finished-at="2025-04-04T20:25:06 IST" duration-ms="103773">
+    <test started-at="2025-06-04T13:25:42 IST" name="Test2" finished-at="2025-06-04T13:26:24 IST" duration-ms="41595">
       <class name="ContactsTest.CreateContactTest">
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:ContactsTest.CreateContactTest@7ce69770]" started-at="2025-04-04T20:24:39 IST" name="beforeClass" finished-at="2025-04-04T20:24:41 IST" duration-ms="1690" status="PASS">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:ContactsTest.CreateContactTest@338fc1d8]" started-at="2025-06-04T13:25:58 IST" name="beforeClass" finished-at="2025-06-04T13:26:01 IST" duration-ms="3908" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:ContactsTest.CreateContactTest@7ce69770]" started-at="2025-04-04T20:24:41 IST" name="beforeMethod" finished-at="2025-04-04T20:24:47 IST" duration-ms="6319" status="PASS">
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:ContactsTest.CreateContactTest@338fc1d8]" started-at="2025-06-04T13:26:01 IST" name="beforeMethod" finished-at="2025-06-04T13:26:04 IST" duration-ms="2020" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="createContactTest()[pri:0, instance:ContactsTest.CreateContactTest@7ce69770]" started-at="2025-04-04T20:24:47 IST" name="createContactTest" finished-at="2025-04-04T20:25:05 IST" duration-ms="17360" status="PASS">
+        <test-method signature="createContactTest()[pri:0, instance:ContactsTest.CreateContactTest@338fc1d8]" started-at="2025-06-04T13:26:04 IST" name="createContactTest" finished-at="2025-06-04T13:26:22 IST" duration-ms="18331" status="PASS">
           <reporter-output>
             <line>
-              <![CDATA[Contact veena_604 added Successfully]]>
+              <![CDATA[Contact veena_283 added Successfully]]>
             </line>
           </reporter-output>
         </test-method> <!-- createContactTest -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:ContactsTest.CreateContactTest@7ce69770]" started-at="2025-04-04T20:25:05 IST" name="afterMethod" finished-at="2025-04-04T20:25:05 IST" duration-ms="126" status="PASS">
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:ContactsTest.CreateContactTest@338fc1d8]" started-at="2025-06-04T13:26:22 IST" name="afterMethod" finished-at="2025-06-04T13:26:22 IST" duration-ms="180" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:ContactsTest.CreateContactTest@7ce69770]" started-at="2025-04-04T20:25:05 IST" name="afterClass" finished-at="2025-04-04T20:25:06 IST" duration-ms="570" status="PASS">
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:ContactsTest.CreateContactTest@338fc1d8]" started-at="2025-06-04T13:26:22 IST" name="afterClass" finished-at="2025-06-04T13:26:24 IST" duration-ms="1589" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
       </class> <!-- ContactsTest.CreateContactTest -->
       <class name="Login.LoginTest">
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:Login.LoginTest@7ce026d3]" started-at="2025-04-04T20:24:29 IST" name="beforeClass" finished-at="2025-04-04T20:24:31 IST" duration-ms="1624" status="PASS">
+        <test-method is-config="true" signature="beforeSuite()[pri:0, instance:Login.LoginTest@5b38c1ec]" started-at="2025-06-04T13:25:41 IST" name="beforeSuite" finished-at="2025-06-04T13:25:42 IST" duration-ms="642" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeSuite -->
+        <test-method is-config="true" signature="beforetest()[pri:0, instance:Login.LoginTest@5b38c1ec]" started-at="2025-06-04T13:25:42 IST" name="beforetest" finished-at="2025-06-04T13:25:42 IST" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforetest -->
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:Login.LoginTest@5b38c1ec]" started-at="2025-06-04T13:25:42 IST" name="beforeClass" finished-at="2025-06-04T13:25:47 IST" duration-ms="4929" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:Login.LoginTest@7ce026d3]" started-at="2025-04-04T20:24:31 IST" name="beforeMethod" finished-at="2025-04-04T20:24:37 IST" duration-ms="5900" status="PASS">
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:Login.LoginTest@5b38c1ec]" started-at="2025-06-04T13:25:47 IST" name="beforeMethod" finished-at="2025-06-04T13:25:54 IST" duration-ms="6591" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="loginTest()[pri:0, instance:Login.LoginTest@7ce026d3]" started-at="2025-04-04T20:24:37 IST" name="loginTest" finished-at="2025-04-04T20:24:39 IST" duration-ms="2127" status="PASS">
+        <test-method signature="loginTest()[pri:0, instance:Login.LoginTest@5b38c1ec]" started-at="2025-06-04T13:25:54 IST" name="loginTest" finished-at="2025-06-04T13:25:56 IST" duration-ms="2121" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Validation is passed]]>
             </line>
           </reporter-output>
         </test-method> <!-- loginTest -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:Login.LoginTest@7ce026d3]" started-at="2025-04-04T20:24:39 IST" name="afterMethod" finished-at="2025-04-04T20:24:39 IST" duration-ms="133" status="PASS">
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:Login.LoginTest@5b38c1ec]" started-at="2025-06-04T13:25:56 IST" name="afterMethod" finished-at="2025-06-04T13:25:56 IST" duration-ms="346" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:Login.LoginTest@7ce026d3]" started-at="2025-04-04T20:24:39 IST" name="afterClass" finished-at="2025-04-04T20:24:39 IST" duration-ms="396" status="PASS">
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:Login.LoginTest@5b38c1ec]" started-at="2025-06-04T13:25:56 IST" name="afterClass" finished-at="2025-06-04T13:25:58 IST" duration-ms="1457" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:Login.LoginTest@5b38c1ec]" started-at="2025-06-04T13:26:24 IST" name="afterTest" finished-at="2025-06-04T13:26:24 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+        <test-method is-config="true" signature="afterSuite()[pri:0, instance:Login.LoginTest@5b38c1ec]" started-at="2025-06-04T13:26:24 IST" name="afterSuite" finished-at="2025-06-04T13:26:24 IST" duration-ms="7" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterSuite -->
       </class> <!-- Login.LoginTest -->
+    </test> <!-- Test2 -->
+    <test started-at="2025-06-04T13:25:42 IST" name="Test1" finished-at="2025-06-04T13:26:24 IST" duration-ms="42395">
       <class name="ProductTest.CreateProductTest">
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:ProductTest.CreateProductTest@1caa0244]" started-at="2025-04-04T20:24:07 IST" name="beforeClass" finished-at="2025-04-04T20:24:09 IST" duration-ms="1840" status="PASS">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:ProductTest.CreateProductTest@5ddeb7cb]" started-at="2025-06-04T13:26:04 IST" name="beforeClass" finished-at="2025-06-04T13:26:08 IST" duration-ms="4237" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:ProductTest.CreateProductTest@1caa0244]" started-at="2025-04-04T20:24:09 IST" name="beforeMethod" finished-at="2025-04-04T20:24:17 IST" duration-ms="7409" status="PASS">
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:ProductTest.CreateProductTest@5ddeb7cb]" started-at="2025-06-04T13:26:08 IST" name="beforeMethod" finished-at="2025-06-04T13:26:11 IST" duration-ms="2200" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="createProductTest()[pri:0, instance:ProductTest.CreateProductTest@1caa0244]" started-at="2025-04-04T20:24:17 IST" name="createProductTest" finished-at="2025-04-04T20:24:28 IST" duration-ms="11376" status="PASS">
+        <test-method signature="createProductTest()[pri:0, instance:ProductTest.CreateProductTest@5ddeb7cb]" started-at="2025-06-04T13:26:11 IST" name="createProductTest" finished-at="2025-06-04T13:26:23 IST" duration-ms="12010" status="PASS">
           <reporter-output>
             <line>
-              <![CDATA[Product Car_885 added successfully]]>
+              <![CDATA[Product Car_808 added successfully]]>
             </line>
           </reporter-output>
         </test-method> <!-- createProductTest -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:ProductTest.CreateProductTest@1caa0244]" started-at="2025-04-04T20:24:28 IST" name="afterMethod" finished-at="2025-04-04T20:24:29 IST" duration-ms="566" status="PASS">
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:ProductTest.CreateProductTest@5ddeb7cb]" started-at="2025-06-04T13:26:23 IST" name="afterMethod" finished-at="2025-06-04T13:26:23 IST" duration-ms="212" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:ProductTest.CreateProductTest@1caa0244]" started-at="2025-04-04T20:24:29 IST" name="afterClass" finished-at="2025-04-04T20:24:29 IST" duration-ms="595" status="PASS">
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:ProductTest.CreateProductTest@5ddeb7cb]" started-at="2025-06-04T13:26:23 IST" name="afterClass" finished-at="2025-06-04T13:26:24 IST" duration-ms="1523" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
       </class> <!-- ProductTest.CreateProductTest -->
       <class name="CampaignTest.CreateCampaignTest">
-        <test-method is-config="true" signature="beforeSuite()[pri:0, instance:CampaignTest.CreateCampaignTest@6fa51cd4]" started-at="2025-04-04T20:23:21 IST" name="beforeSuite" finished-at="2025-04-04T20:23:22 IST" duration-ms="1039" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeSuite -->
-        <test-method is-config="true" signature="beforetest()[pri:0, instance:CampaignTest.CreateCampaignTest@6fa51cd4]" started-at="2025-04-04T20:23:22 IST" name="beforetest" finished-at="2025-04-04T20:23:22 IST" duration-ms="5" status="PASS">
+        <test-method is-config="true" signature="beforetest()[pri:0, instance:CampaignTest.CreateCampaignTest@451001e5]" started-at="2025-06-04T13:25:42 IST" name="beforetest" finished-at="2025-06-04T13:25:42 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforetest -->
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:CampaignTest.CreateCampaignTest@6fa51cd4]" started-at="2025-04-04T20:23:22 IST" name="beforeClass" finished-at="2025-04-04T20:23:33 IST" duration-ms="11214" status="PASS">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:CampaignTest.CreateCampaignTest@451001e5]" started-at="2025-06-04T13:25:42 IST" name="beforeClass" finished-at="2025-06-04T13:25:47 IST" duration-ms="5317" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:CampaignTest.CreateCampaignTest@6fa51cd4]" started-at="2025-04-04T20:23:33 IST" name="beforeMethod" finished-at="2025-04-04T20:23:43 IST" duration-ms="9510" status="PASS">
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:CampaignTest.CreateCampaignTest@451001e5]" started-at="2025-06-04T13:25:47 IST" name="beforeMethod" finished-at="2025-06-04T13:25:56 IST" duration-ms="8281" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="createCampaignTest()[pri:0, instance:CampaignTest.CreateCampaignTest@6fa51cd4]" started-at="2025-04-04T20:23:43 IST" name="createCampaignTest" finished-at="2025-04-04T20:23:50 IST" duration-ms="7845" status="PASS">
+        <test-method signature="createCampaignTest()[pri:0, instance:CampaignTest.CreateCampaignTest@451001e5]" started-at="2025-06-04T13:25:56 IST" name="createCampaignTest" finished-at="2025-06-04T13:26:03 IST" duration-ms="7353" status="PASS">
           <reporter-output>
             <line>
-              <![CDATA[Campaign Apple_741 added sucessfully]]>
+              <![CDATA[Campaign Apple_657 added sucessfully]]>
             </line>
           </reporter-output>
         </test-method> <!-- createCampaignTest -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:CampaignTest.CreateCampaignTest@6fa51cd4]" started-at="2025-04-04T20:23:50 IST" name="afterMethod" finished-at="2025-04-04T20:23:51 IST" duration-ms="221" status="PASS">
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:CampaignTest.CreateCampaignTest@451001e5]" started-at="2025-06-04T13:26:03 IST" name="afterMethod" finished-at="2025-06-04T13:26:04 IST" duration-ms="1161" status="FAIL">
+          <exception class="org.openqa.selenium.ElementClickInterceptedException">
+            <message>
+              <![CDATA[element click intercepted: Element <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="user" class="svg-inline--fa fa-user " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" style="font-size: 22px; padding: 0px;">...</svg> is not clickable at point (1264, 35). Other element would receive the click: <div class="Toastify__toast Toastify__toast--success" style="">...</div>
+  (Session info: MicrosoftEdge=137.0.3296.62)
+Build info: version: '4.26.0', revision: '8ccf0219d7'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.3'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [e01abd8206ff84359a61df0d18085a4c, clickElement {id=f.392011A887870E205C67DFB461DD9686.d.F5EC0EAFC91813756C56BB9A543621DB.e.30}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 137.0.3296.62, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:54585}, msedge: {msedgedriverVersion: 137.0.3296.58 (9fd07161f80a..., userDataDir: C:\Users\Guru\AppData\Local...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54585/devtoo..., se:cdpVersion: 137.0.3296.62, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[EdgeDriver: MicrosoftEdge on windows (e01abd8206ff84359a61df0d18085a4c)] -> xpath: //*[name()='svg' and @role='img']]
+Session ID: e01abd8206ff84359a61df0d18085a4c]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="user" class="svg-inline--fa fa-user " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" style="font-size: 22px; padding: 0px;">...</svg> is not clickable at point (1264, 35). Other element would receive the click: <div class="Toastify__toast Toastify__toast--success" style="">...</div>
+  (Session info: MicrosoftEdge=137.0.3296.62)
+Build info: version: '4.26.0', revision: '8ccf0219d7'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.3'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [e01abd8206ff84359a61df0d18085a4c, clickElement {id=f.392011A887870E205C67DFB461DD9686.d.F5EC0EAFC91813756C56BB9A543621DB.e.30}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 137.0.3296.62, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:54585}, msedge: {msedgedriverVersion: 137.0.3296.58 (9fd07161f80a..., userDataDir: C:\Users\Guru\AppData\Local...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54585/devtoo..., se:cdpVersion: 137.0.3296.62, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[EdgeDriver: MicrosoftEdge on windows (e01abd8206ff84359a61df0d18085a4c)] -> xpath: //*[name()='svg' and @role='img']]
+Session ID: e01abd8206ff84359a61df0d18085a4c
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+at jdk.proxy2/jdk.proxy2.$Proxy18.click(Unknown Source)
+at ObjectRepository.DashboardPage.logout(DashboardPage.java:54)
+at genericBaseClassUtility.BaseClass.afterMethod(BaseClass.java:92)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:833)
+at org.testng.internal.invokers.TestInvoker.runAfterConfigurations(TestInvoker.java:802)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:778)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1583)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:CampaignTest.CreateCampaignTest@6fa51cd4]" started-at="2025-04-04T20:23:51 IST" name="beforeMethod" finished-at="2025-04-04T20:23:58 IST" duration-ms="7599" status="PASS">
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:CampaignTest.CreateCampaignTest@451001e5]" started-at="2025-06-04T13:26:04 IST" name="beforeMethod" finished-at="2025-06-04T13:26:04 IST" duration-ms="0" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="createCampaignWithDateTest()[pri:0, instance:CampaignTest.CreateCampaignTest@6fa51cd4]" started-at="2025-04-04T20:23:58 IST" name="createCampaignWithDateTest" finished-at="2025-04-04T20:24:07 IST" duration-ms="8445" status="PASS">
+        <test-method signature="createCampaignWithDateTest()[pri:0, instance:CampaignTest.CreateCampaignTest@451001e5]" started-at="2025-06-04T13:26:04 IST" name="createCampaignWithDateTest" finished-at="2025-06-04T13:26:04 IST" duration-ms="1" status="SKIP">
+          <exception class="org.openqa.selenium.ElementClickInterceptedException">
+            <message>
+              <![CDATA[element click intercepted: Element <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="user" class="svg-inline--fa fa-user " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" style="font-size: 22px; padding: 0px;">...</svg> is not clickable at point (1264, 35). Other element would receive the click: <div class="Toastify__toast Toastify__toast--success" style="">...</div>
+  (Session info: MicrosoftEdge=137.0.3296.62)
+Build info: version: '4.26.0', revision: '8ccf0219d7'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.3'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [e01abd8206ff84359a61df0d18085a4c, clickElement {id=f.392011A887870E205C67DFB461DD9686.d.F5EC0EAFC91813756C56BB9A543621DB.e.30}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 137.0.3296.62, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:54585}, msedge: {msedgedriverVersion: 137.0.3296.58 (9fd07161f80a..., userDataDir: C:\Users\Guru\AppData\Local...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54585/devtoo..., se:cdpVersion: 137.0.3296.62, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[EdgeDriver: MicrosoftEdge on windows (e01abd8206ff84359a61df0d18085a4c)] -> xpath: //*[name()='svg' and @role='img']]
+Session ID: e01abd8206ff84359a61df0d18085a4c]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="user" class="svg-inline--fa fa-user " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" style="font-size: 22px; padding: 0px;">...</svg> is not clickable at point (1264, 35). Other element would receive the click: <div class="Toastify__toast Toastify__toast--success" style="">...</div>
+  (Session info: MicrosoftEdge=137.0.3296.62)
+Build info: version: '4.26.0', revision: '8ccf0219d7'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.3'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [e01abd8206ff84359a61df0d18085a4c, clickElement {id=f.392011A887870E205C67DFB461DD9686.d.F5EC0EAFC91813756C56BB9A543621DB.e.30}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 137.0.3296.62, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:54585}, msedge: {msedgedriverVersion: 137.0.3296.58 (9fd07161f80a..., userDataDir: C:\Users\Guru\AppData\Local...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54585/devtoo..., se:cdpVersion: 137.0.3296.62, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[EdgeDriver: MicrosoftEdge on windows (e01abd8206ff84359a61df0d18085a4c)] -> xpath: //*[name()='svg' and @role='img']]
+Session ID: e01abd8206ff84359a61df0d18085a4c
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+at jdk.proxy2/jdk.proxy2.$Proxy18.click(Unknown Source)
+at ObjectRepository.DashboardPage.logout(DashboardPage.java:54)
+at genericBaseClassUtility.BaseClass.afterMethod(BaseClass.java:92)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:833)
+at org.testng.internal.invokers.TestInvoker.runAfterConfigurations(TestInvoker.java:802)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:778)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1583)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
           <reporter-output>
-            <line>
-              <![CDATA[Campaign Apple_338 added sucessfully]]>
-            </line>
           </reporter-output>
         </test-method> <!-- createCampaignWithDateTest -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:CampaignTest.CreateCampaignTest@6fa51cd4]" started-at="2025-04-04T20:24:07 IST" name="afterMethod" finished-at="2025-04-04T20:24:07 IST" duration-ms="168" status="PASS">
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:CampaignTest.CreateCampaignTest@451001e5]" started-at="2025-06-04T13:26:04 IST" name="afterMethod" finished-at="2025-06-04T13:26:04 IST" duration-ms="0" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:CampaignTest.CreateCampaignTest@6fa51cd4]" started-at="2025-04-04T20:24:07 IST" name="afterClass" finished-at="2025-04-04T20:24:07 IST" duration-ms="558" status="PASS">
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:CampaignTest.CreateCampaignTest@451001e5]" started-at="2025-06-04T13:26:04 IST" name="afterClass" finished-at="2025-06-04T13:26:04 IST" duration-ms="0" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
-        <test-method is-config="true" signature="afterTest()[pri:0, instance:CampaignTest.CreateCampaignTest@6fa51cd4]" started-at="2025-04-04T20:25:06 IST" name="afterTest" finished-at="2025-04-04T20:25:06 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:CampaignTest.CreateCampaignTest@451001e5]" started-at="2025-06-04T13:26:24 IST" name="afterTest" finished-at="2025-06-04T13:26:24 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->
-        <test-method is-config="true" signature="afterSuite()[pri:0, instance:CampaignTest.CreateCampaignTest@6fa51cd4]" started-at="2025-04-04T20:25:06 IST" name="afterSuite" finished-at="2025-04-04T20:25:06 IST" duration-ms="9" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterSuite -->
       </class> <!-- CampaignTest.CreateCampaignTest -->
-    </test> <!-- Test -->
+    </test> <!-- Test1 -->
   </suite> <!-- Suite -->
 </testng-results>

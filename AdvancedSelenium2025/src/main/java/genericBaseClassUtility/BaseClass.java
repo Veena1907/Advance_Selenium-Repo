@@ -16,6 +16,7 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Parameters;
 
 import GenericUtility.DatabaseUtility;
 import GenericUtility.PropertiesFileUtility;
@@ -35,27 +36,33 @@ public class BaseClass {
 		dbUtil.getDBConnection("jdbc:mysql://localhost:3306/Ninza_E18", "root", "Nokia@2690");
 	}
 	@BeforeTest
+	
 	public void beforetest()
 	{
 		System.out.println("Pre configuration Setup");
 	}
+	
+	//@Parameters("browser") for crossBrowserTesting
 	@BeforeClass
+	//public void beforeClass(String browser) throws IOException {for crossBrowserTesting}
 	public void beforeClass() throws IOException
 	{
 		System.out.println("Launch the browser");
-		//String BROWSER = pro.readingDataFromPropertiesFile("browser"); //from properties file
-		String BROWSER = System.getProperty("browser"); //for maven command line
+		//String BROWSER=browser; reading from crossBrowsertesting.xml
+		
+		String BROWSER = pro.readingDataFromPropertiesFile("browser"); //from properties file
+		//String BROWSER = System.getProperty("browser"); //for maven command line
 		if(BROWSER.equalsIgnoreCase("chrome"))
-		{
-			driver=new ChromeDriver();
+	{
+		driver=new ChromeDriver();
 		}
 		else if(BROWSER.equalsIgnoreCase("firefox"))
 		{
 			driver=new FirefoxDriver();
 		}
-		else if(BROWSER.equalsIgnoreCase("edge"))
+	else if(BROWSER.equalsIgnoreCase("edge"))
 		{
-			driver=new EdgeDriver();
+		driver=new EdgeDriver();
 		}
 		else
 		{
@@ -69,10 +76,10 @@ public class BaseClass {
 	{
 		System.out.println("Login");
 		String URL = pro.readingDataFromPropertiesFile("url");
-		//String UN = pro.readingDataFromPropertiesFile("uname"); //from propertiesfile
-		  String UN = System.getProperty("uname"); //reading from maven cmd line
-		  String PWD = System.getProperty("pwd"); //reading from maven cmd line
-		//String PWD = pro.readingDataFromPropertiesFile("pwd"); //from propertiesfile
+		String UN = pro.readingDataFromPropertiesFile("uname"); //from propertiesfile
+		  //String UN = System.getProperty("uname"); //reading from maven cmd line
+		//  String PWD = System.getProperty("pwd"); //reading from maven cmd line
+		String PWD = pro.readingDataFromPropertiesFile("pwd"); //from propertiesfile
 		driver.get(URL);
 		LoginPage lp= new LoginPage(driver);
 		lp.login(UN, PWD);

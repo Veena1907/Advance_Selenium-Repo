@@ -10,8 +10,8 @@
           <include name="afterTest"/>
           <include name="afterClass"/>
           <include name="loginTest"/>
-          <include name="beforeMethod"/>
           <include name="beforetest"/>
+          <include name="beforeMethod"/>
           <include name="beforeClass"/>
           <include name="afterMethod"/>
         </methods>
