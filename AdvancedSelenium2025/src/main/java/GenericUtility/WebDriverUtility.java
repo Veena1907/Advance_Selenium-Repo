@@ -16,26 +16,46 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class WebDriverUtility {
 
-	public void waitForElementPresent(WebDriver driver, WebElement element,long sec)
+	public void waitForElementPresent(WebDriver driver, WebElement element)
 	{
-		WebDriverWait wait= new WebDriverWait(driver, Duration.ofSeconds(sec));
+		WebDriverWait wait= new WebDriverWait(driver, Duration.ofSeconds(20));
 		wait.until(ExpectedConditions.visibilityOf(element));
 	}
 	
-	public void waitForElementToBeClickable(WebDriver driver, WebElement element,long sec)
+	public void waitForElementToBeClickable(WebDriver driver, WebElement element)
 	{
-		WebDriverWait wait= new WebDriverWait(driver, Duration.ofSeconds(sec));
+		WebDriverWait wait= new WebDriverWait(driver, Duration.ofSeconds(20));
 		wait.until(ExpectedConditions.elementToBeClickable(element));
 	}
 	
+	public void waitForPageToLoad(WebDriver driver)
+	{
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
+	}
+	
+	//Switch to window using partialURL
 	public void switchToWindow(WebDriver driver, String partialUrl)
 	{
 		Set<String> allWindowsIds= driver.getWindowHandles();
 		for(String Window:allWindowsIds)
 		{
 			driver.switchTo().window(Window);
-			String actUrl=driver.getCurrentUrl();
+			String actUrl=driver.getCurrentUrl(); 
 			if(actUrl.contains(partialUrl))
+			{
+				break;
+			}
+		}
+	}
+	//Switch to window using partial Title
+	public void switchToWindowOnTitle(WebDriver driver, String partialTitle)
+	{
+		Set<String> allWindowsIds= driver.getWindowHandles();
+		for(String Window:allWindowsIds)
+		{
+			driver.switchTo().window(Window);
+			String actUrl=driver.getTitle(); 
+			if(actUrl.contains(partialTitle))
 			{
 				break;
 			}
@@ -53,6 +73,16 @@ public class WebDriverUtility {
 	public void switchToFrame(WebDriver driver, WebElement element)
 	{
 		driver.switchTo().frame(element);
+	}
+	
+	public void switchToAlertAndAccept(WebDriver driver)
+	{
+		driver.switchTo().alert().accept();
+	}
+	
+	public void switchToAlertAndCancel(WebDriver driver)
+	{
+		driver.switchTo().alert().dismiss();
 	}
 	
 	public void select(WebElement element ,String value)

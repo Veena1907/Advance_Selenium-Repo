@@ -24,6 +24,21 @@ public class DatabaseUtility {
 		    }
 	}
 	
+//Hardcode the DB connection (in entire project there is only one database so better to call this method instead of giving URl ,UN etc
+	//method overloading
+			public void getDBConnection() throws SQLException
+			{
+				try {
+				 Driver driverRef= new Driver();
+				 DriverManager.registerDriver(driverRef);		 
+				 Conn= DriverManager.getConnection("jdbc:mysql://localhost:3306/Ninza_E18", "root", "Nokia@2690");
+				    }
+				catch(Exception e) {
+					//TODO: handle exception
+					System.out.println("connection not established");
+				    }
+			}
+	
 	public void closeDBConnection()
 	{
 		try {
@@ -58,4 +73,6 @@ public class DatabaseUtility {
 			return result;
 
 		}
+		
+
 }

@@ -22,7 +22,7 @@ import genericListenerUtility.ListenerImp;
 //@Listeners(ListenerImp.class)
 public class CreateContactTest extends BaseClass{
 	
-	//@Parameters("browser")
+	//@Parameters("browser"){not necessary to give if we are passing in BaseClass because Lauch browser code is written in @BeforeClass}
 	//@Test(groups= {"RegressionTest"})
 	@Test()
 	public void createContactTest() throws IOException, InterruptedException {
@@ -47,7 +47,9 @@ public class CreateContactTest extends BaseClass{
 				System.out.println("Title is:-"+ Title);
 				
 				driver.manage().window().maximize();
-				driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
+				WebDriverUtility webUtility= new WebDriverUtility();
+				webUtility.waitForPageToLoad(driver);
+				
 				
 				DashboardPage dp= new DashboardPage(driver);
 				dp.getCampaignsLink().click();
@@ -61,13 +63,13 @@ public class CreateContactTest extends BaseClass{
 				
 				WebElement contactLink = dp.getContactsLink();
 				WebDriverUtility Wutil = new WebDriverUtility();
-				Wutil.waitForElementToBeClickable(driver, contactLink, 20);
+				Wutil.waitForElementToBeClickable(driver, contactLink);
 				contactLink.click();
 				
 				Thread.sleep(5000);
 				ContactsPage ccp1=new ContactsPage(driver);
 				WebElement createContactBtn = ccp1.getCreateContactsBtn();
-				Wutil.waitForElementToBeClickable(driver, createContactBtn, 20);
+				Wutil.waitForElementToBeClickable(driver, createContactBtn);
 				createContactBtn.click();
 				
 				CreateContactsPage cct= new CreateContactsPage(driver);

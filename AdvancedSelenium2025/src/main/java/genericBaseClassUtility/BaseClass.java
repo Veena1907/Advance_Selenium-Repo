@@ -20,13 +20,15 @@ import org.testng.annotations.Parameters;
 
 import GenericUtility.DatabaseUtility;
 import GenericUtility.PropertiesFileUtility;
+import GenericUtility.UtilityClassObject;
 import ObjectRepository.DashboardPage;
 import ObjectRepository.LoginPage;
 
 public class BaseClass {
 	
 	public WebDriver driver=null;
-	public static WebDriver sdriver=null;
+	//this sdriver is created to use in Listener class 
+	public static WebDriver sdriver=null; //if we give static variable we cannot perform parallel execution as static varaible will have only one instance
 	DatabaseUtility dbUtil=new DatabaseUtility();
 	PropertiesFileUtility pro=new PropertiesFileUtility();
 	@BeforeSuite
@@ -68,7 +70,8 @@ public class BaseClass {
 		{
 			driver=new ChromeDriver();
 		}
-		  sdriver=driver;
+		  sdriver=driver; //pass the value of driver to sdriver
+		 // UtilityClassObject.setDriver(driver);
 	}
 	
 	@BeforeMethod

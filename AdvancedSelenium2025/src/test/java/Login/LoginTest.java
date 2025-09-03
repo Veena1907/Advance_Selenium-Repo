@@ -5,12 +5,14 @@ import org.testng.Assert;
 import org.testng.Reporter;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
+
+import GenericUtility.WebDriverUtility;
 import genericBaseClassUtility.BaseClass;
 
 //@Listeners(ListenerImp.class)
 public class LoginTest extends BaseClass {
 	
-	//@Parameters("browser")
+	//@Parameters("browser"){not necessary to give if we are passing in BaseClass because Lauch browser code is written in @BeforeClass}
 	//@Test(groups= {"SmokeTest"})
 	@Test(retryAnalyzer = genericListenerUtility.RetryListenerImp.class)
 	public void loginTest() throws InterruptedException, IOException {
@@ -18,7 +20,8 @@ public class LoginTest extends BaseClass {
 		String expectedURL="http://49.249.28.218:8098/dashboard";
 		
 		driver.manage().window().maximize();
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
+		WebDriverUtility webUtility= new WebDriverUtility();
+		webUtility.waitForPageToLoad(driver);
 		
 		Thread.sleep(2000);
 		//verification of dashboard

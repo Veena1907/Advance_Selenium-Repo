@@ -25,6 +25,7 @@ import org.openqa.selenium.support.ui.Select;
 import GenericUtility.ExcelFileUtility;
 import GenericUtility.JavaUtility;
 import GenericUtility.PropertiesFileUtility;
+import GenericUtility.WebDriverUtility;
 
 public class MyCreateContactsWithMandatoryFieldsTest {
 
@@ -79,7 +80,9 @@ public class MyCreateContactsWithMandatoryFieldsTest {
 			driver= new EdgeDriver();
 		}
 		driver.manage().window().maximize();
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
+		WebDriverUtility webUtility= new WebDriverUtility();
+		webUtility.waitForPageToLoad(driver);
+		
 		driver.get(URL);
 		driver.findElement(By.id("username")).sendKeys(UN);
 		driver.findElement(By.id("inputPassword")).sendKeys(PWD);

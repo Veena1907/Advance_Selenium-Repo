@@ -9,6 +9,7 @@
           <include name="afterSuite"/>
           <include name="afterTest"/>
           <include name="createCampaignWithDateTest"/>
+          <include name="createCampaignTest"/>
           <include name="afterClass"/>
           <include name="beforeMethod"/>
           <include name="beforetest"/>
@@ -16,6 +17,36 @@
           <include name="afterMethod"/>
         </methods>
       </class> <!-- CampaignTest.CreateCampaignTest -->
+      <class name="ProductTest.CreateProductTest">
+        <methods>
+          <include name="beforeSuite"/>
+          <include name="afterSuite"/>
+          <include name="afterTest"/>
+          <include name="afterClass"/>
+          <include name="beforeMethod"/>
+          <include name="beforetest"/>
+          <include name="createProductTest"/>
+          <include name="beforeClass"/>
+          <include name="afterMethod"/>
+        </methods>
+      </class> <!-- ProductTest.CreateProductTest -->
     </classes>
   </test> <!-- Test1(failed) -->
+  <test thread-count="2" parallel="tests" name="Test2(failed)">
+    <classes>
+      <class name="ContactsTest.CreateContactTest">
+        <methods>
+          <include name="beforeSuite"/>
+          <include name="afterSuite"/>
+          <include name="afterTest"/>
+          <include name="afterClass"/>
+          <include name="beforeMethod"/>
+          <include name="beforetest"/>
+          <include name="beforeClass"/>
+          <include name="createContactTest"/>
+          <include name="afterMethod"/>
+        </methods>
+      </class> <!-- ContactsTest.CreateContactTest -->
+    </classes>
+  </test> <!-- Test2(failed) -->
 </suite> <!-- Failed suite [Suite] -->

@@ -12,6 +12,7 @@ import org.testng.annotations.Test;
 
 import GenericUtility.ExcelFileUtility;
 import GenericUtility.JavaUtility;
+import GenericUtility.WebDriverUtility;
 import ObjectRepository.CreateProductsPage;
 import ObjectRepository.DashboardPage;
 import ObjectRepository.ProductPage;
@@ -20,7 +21,7 @@ import genericListenerUtility.ListenerImp;
 
 //@Listeners(ListenerImp.class)
 public class CreateProductTest extends BaseClass {
-	//@Parameters("browser")
+	//@Parameters("browser"){not necessary to give if we are passing in BaseClass because Lauch browser code is written in @BeforeClass}
 	//@Test(groups= {"IntegrationTest"})
 	@Test()
 	public void createProductTest() throws EncryptedDocumentException, IOException, InterruptedException {
@@ -35,7 +36,8 @@ public class CreateProductTest extends BaseClass {
 		
 		String expectedURL="http://49.249.28.218:8098/dashboard";
 		driver.manage().window().maximize();
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
+		WebDriverUtility webUtility= new WebDriverUtility();
+		webUtility.waitForPageToLoad(driver);
 		//navigating to ninza CRM
 		
 		Thread.sleep(2000);

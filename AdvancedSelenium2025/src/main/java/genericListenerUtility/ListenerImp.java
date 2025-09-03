@@ -17,6 +17,8 @@ import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.Status;
 import com.aventstack.extentreports.reporter.ExtentSparkReporter;
 import com.aventstack.extentreports.reporter.configuration.Theme;
+
+import GenericUtility.UtilityClassObject;
 import genericBaseClassUtility.BaseClass;
 
 
@@ -24,20 +26,26 @@ public class ListenerImp implements ITestListener,ISuiteListener {
 
 	public static ExtentReports report=null;
 	public ExtentSparkReporter spark=null;
-	public static ExtentTest test=null;
+	public static ExtentTest test=null; // used for log instead of sopln use test.log
 
 	@Override
+	//this method is exactly same as @BeforeSuite annotation
 	public void onStart(ISuite suite) {
 		System.out.println("Report configuration");
 		Date date = new Date();
 		SimpleDateFormat sim=new SimpleDateFormat("HH-mm-ss");
 		String time = sim.format(date);
 		System.out.println(time);
-		spark=new ExtentSparkReporter("./AdvancedReports/report"+time+".html");
+		   // or
+		//String time=new Date().toString().replace(" ", "_").replace(":", " ");  
+		
+		//Spark report config
+		spark=new ExtentSparkReporter("./AdvancedReports/report"+time+".html"); //report is getting generated here
 		spark.config().setDocumentTitle("Ninza_CRM_Project_Results");
 		spark.config().setReportName("CRM_Report");
 		spark.config().setTheme(Theme.DARK);
 		
+		//add Enviornment information and create test
 		report=new ExtentReports();
 		report.attachReporter(spark);
 		report.setSystemInfo("OS", "Windows-11");
@@ -56,16 +64,18 @@ public class ListenerImp implements ITestListener,ISuiteListener {
 	}
 
 	@Override
+	//it will execute before every testscripts
 	public void onTestStart(ITestResult result) {
 		System.out.println(result.getMethod().getMethodName() + " Starts ");
 		test=report.createTest(result.getMethod().getMethodName());
-		test.log(Status.INFO, result.getMethod().getMethodName()+" Started ");
+		//UtilityClassObject.setTest(test);
+		test.log(Status.INFO, result.getMethod().getMethodName()+" Started "); //in every log we can specify the Status information
 	}
 
 	@Override
 	public void onTestSuccess(ITestResult result) {
 		System.out.println(result.getMethod().getMethodName() + " ends ");
-		test.log(Status.PASS, result.getMethod().getMethodName()+" Ended ");
+		test.log(Status.PASS, result.getMethod().getMethodName()+" Ended "); 
 	}
 
 	@Override
@@ -74,8 +84,11 @@ public class ListenerImp implements ITestListener,ISuiteListener {
 		Date date = new Date();
 		SimpleDateFormat sim=new SimpleDateFormat("HH-mm-ss");
 		String time = sim.format(date);
+		 // or
+		//String time=new Date().toString().replace(" ", "_").replace(":", " ");  
+		 
 		TakesScreenshot ts=(TakesScreenshot)BaseClass.sdriver;
-		String temp = ts.getScreenshotAs(OutputType.BASE64);
+		String temp = ts.getScreenshotAs(OutputType.BASE64); //for extend report we use BASE64
 		File temp1 = ts.getScreenshotAs(OutputType.FILE);
 		
 		File dest=new File("./ScreenShot/"+testcaseName+"_"+time+".png");
@@ -85,7 +98,7 @@ public class ListenerImp implements ITestListener,ISuiteListener {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		test.addScreenCaptureFromBase64String(temp,"Failed"+testcaseName);
+		test.addScreenCaptureFromBase64String(temp,"Failed"+testcaseName); //attaching screenshot to extend report
 		
 		test.log(Status.FAIL, result.getMethod().getMethodName()+" Failed ");
 
@@ -114,7 +127,10 @@ public class ListenerImp implements ITestListener,ISuiteListener {
 
 	@Override
 	public void onFinish(ITestContext context) {
-		report.flush();
+		
+		//using this we can take the backup of the log of reports if don't use flush method our report will not be saved
+		
+		report.flush(); 
 	}
 	
 
